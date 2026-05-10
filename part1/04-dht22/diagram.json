@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "author": "IoT Masters",
+  "editor": "wokwi",
+  "parts": [
+    { "id": "pico", "type": "wokwi-pi-pico", "top": 0, "left": 0, "attrs": {} },
+    { "id": "dht1", "type": "wokwi-dht22", "top": -80, "left": 220, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP15", "dht1:SDA", "green", [] ],
+    [ "pico:3V3",  "dht1:VCC", "red",   [] ],
+    [ "pico:GND.1","dht1:GND", "black", [] ]
+  ]
+}

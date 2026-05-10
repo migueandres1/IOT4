@@ -1,0 +1,19 @@
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Wokwi
+.wokwi/
+
+# Locales
+*.swp
+*.bak
+*.tmp
+.NOTA-FINAL.md

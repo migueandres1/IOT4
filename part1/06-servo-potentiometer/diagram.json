@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "author": "IoT Masters",
+  "editor": "wokwi",
+  "parts": [
+    { "id": "pico", "type": "wokwi-pi-pico", "top": 0, "left": 0, "attrs": {} },
+    { "id": "servo1", "type": "wokwi-servo", "top": -100, "left": 240, "attrs": {} },
+    { "id": "pot1",   "type": "wokwi-potentiometer", "top": 80, "left": 280, "attrs": { "value": "50" } }
+  ],
+  "connections": [
+    [ "pico:GP15", "servo1:PWM", "orange", [] ],
+    [ "pico:VBUS", "servo1:V+",  "red",    [] ],
+    [ "pico:GND.1","servo1:GND", "black",  [] ],
+
+    [ "pico:3V3",  "pot1:VCC",   "red",    [] ],
+    [ "pico:GND.2","pot1:GND",   "black",  [] ],
+    [ "pico:GP26", "pot1:SIG",   "yellow", [] ]
+  ]
+}

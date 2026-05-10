@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "author": "IoT Masters",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "id": "pico",
+      "type": "wokwi-pi-pico",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "id": "led_red",
+      "type": "wokwi-led",
+      "top": -50,
+      "left": 220,
+      "attrs": {
+        "color": "red"
+      }
+    },
+    {
+      "id": "led_yellow",
+      "type": "wokwi-led",
+      "top": -50,
+      "left": 280,
+      "attrs": {
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "led_green",
+      "type": "wokwi-led",
+      "top": -50,
+      "left": 340,
+      "attrs": {
+        "color": "green"
+      }
+    },
+    {
+      "id": "r1",
+      "type": "wokwi-resistor",
+      "top": 10,
+      "left": 220,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "id": "r2",
+      "type": "wokwi-resistor",
+      "top": 10,
+      "left": 280,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "id": "r3",
+      "type": "wokwi-resistor",
+      "top": 10,
+      "left": 340,
+      "attrs": {
+        "value": "220"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "pico:GP15",
+      "r1:1",
+      "red",
+      []
+    ],
+    [
+      "r1:2",
+      "led_red:A",
+      "red",
+      []
+    ],
+    [
+      "led_red:C",
+      "pico:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pico:GP14",
+      "r2:1",
+      "orange",
+      []
+    ],
+    [
+      "r2:2",
+      "led_yellow:A",
+      "orange",
+      []
+    ],
+    [
+      "led_yellow:C",
+      "pico:GND.1",
+      "black",
+      []
+    ],
+    [
+      "pico:GP13",
+      "r3:1",
+      "green",
+      []
+    ],
+    [
+      "r3:2",
+      "led_green:A",
+      "green",
+      []
+    ],
+    [
+      "led_green:C",
+      "pico:GND.1",
+      "black",
+      []
+    ]
+  ]
+}
