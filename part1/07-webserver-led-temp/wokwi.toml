@@ -1,0 +1,10 @@
+[wokwi]
+version = 1
+firmware = 'firmware.uf2'
+elf      = 'firmware.uf2'
+rfc2217ServerPort = 4000
+
+# Conecta al wokwigw que corres en otra terminal con:
+#   wokwigw --forward 9080:10.13.37.3:80
+[net]
+gateway = "ws://localhost:9011"
